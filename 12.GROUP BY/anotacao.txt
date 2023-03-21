@@ -1,0 +1,37 @@
+GROUP BY
+
+-- Irá dividir o resultado da pesquisa em grupos.
+Para cada grupo pode-se aplicar uma função de agregação, por exemplo:
+
+    -Calcular a soma de itens.
+    -Contar o número de itens naquele grupo.
+
+    sintaxe:
+
+    SELECT coluna1,funcaoAgregacao(coluna2)
+    FROM nomeTabela
+    GROUP BY coluna1
+
+
+===================================
+
+
+SELECT *
+FROM Sales.SalesOrderDetail
+
+SELECT SpecialOfferId, SUM(UnitPrice)
+FROM Sales.SalesOrderDetail
+GROUP BY SpecialOfferID
+
+====================================
+
+--Vamos Dizer que eu quero saber quantos cada produto foi vendido até hoje
+
+SELECT ProductID,COUNT(ProductID) AS "Vendas"
+FROM Sales.SalesOrderDetail
+GROUP BY ProductID
+
+=====================================
+
+--Vamos dizer que eu quero saber quantos nomes de cada nome temos cadastrado em nosso banco de dados
+
