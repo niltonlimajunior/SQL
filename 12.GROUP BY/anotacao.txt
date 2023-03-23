@@ -35,3 +35,22 @@ GROUP BY ProductID
 
 --Vamos dizer que eu quero saber quantos nomes de cada nome temos cadastrado em nosso banco de dados
 
+SELECT firstname , COUNT(firstname) AS "contagem"
+FROM Person.Person
+GROUP BY FirstName
+
+====================================
+
+--Na tabela production.product eu quero saber a média de preço para os produtos que são pratas(silver)
+
+SELECT color, AVG (listprice) AS "media de preço"
+FROM Production.Product
+WHERE color = 'silver'
+GROUP BY color
+
+ou
+
+SELECT color, AVG (listprice) AS "media de preço"
+FROM Production.Product
+WHERE color LIKE ('silver')
+GROUP BY color
