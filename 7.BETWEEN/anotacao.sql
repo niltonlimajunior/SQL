@@ -2,7 +2,7 @@ BETWEEN (entre)
 
 --O BETWEEN é usado para encontrar o Valor entre um valor mínimo e valor máximo.
 
-valor BETWEEN mínimo AND máximo; (RECOMENDADO ESTA MANEIRA)
+valor BETWEEN mínimo AND máximo;-- (RECOMENDADO ESTA MANEIRA)
 
 é a mesma coisa que dizer:
 valor >= mínimo AND valor <= máximo;

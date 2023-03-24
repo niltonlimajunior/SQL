@@ -24,3 +24,20 @@ HAVING COUNT(firstname) > 10
 
 =======================
 
+Queremos saber quais produtos que no total de vendeas estão entre 162k a 500k
+
+SELECT ProductID, SUM(linetotal) AS "total"
+FROM Sales.SalesOrderDetail
+GROUP BY ProductID
+HAVING SUM(linetotal) BETWEEN 162000 AND 500000
+ORDER BY SUM(LineTotal) asc
+
+=========================
+
+--Vamos dizer que queremos saber quais nomes no sistema tem uma ocorrência maior que 10 vezes, porém somente onde o título é Mr.
+
+SELECT firstname, COUNT(firstname) AS "quantidade"
+FROM person.person
+WHERE Title = 'Mr.'
+GROUP BY firstname
+HAVING COUNT(firstname) > 10

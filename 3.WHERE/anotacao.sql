@@ -1,5 +1,5 @@
 WHERE
-Extrair alguns dados específicos da tabela
+--Extrair alguns dados específicos da tabela
 
 sintaxe:
 

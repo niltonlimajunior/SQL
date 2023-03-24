@@ -1,4 +1,4 @@
-Quantas pessoas temos com o sobrenome que inicia com a letra P?^
+--Quantas pessoas temos com o sobrenome que inicia com a letra P?^
 
 
 SELECT COUNT (lastname)

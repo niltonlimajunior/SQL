@@ -1,4 +1,4 @@
-Obter oProductId dos 10 produtos mais caros cadastrados no sistema, listando do mais caro para o mais barato
+--Obter oProductId dos 10 produtos mais caros cadastrados no sistema, listando do mais caro para o mais barato
 
 SELECT TOP 10 *
 FROM Production.Product

@@ -1,4 +1,4 @@
-Qauntos produtos vermelhos tem preço entre 500 a 1000 dolares?
+--Quantos produtos vermelhos tem preço entre 500 a 1000 dolares?
 
 SELECT COUNT (Color)
 FROM Production.Product

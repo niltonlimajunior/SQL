@@ -9,6 +9,6 @@ FROM tabela
 SELECT * (asterisco vai retornar todas as colunas da tabela)
 FROM tabela
 
-obs:Os comandos em SQL por convenção devem estar descritos em maiúsculas para que se diferencie os comandos
+--obs:Os comandos em SQL por convenção devem estar descritos em maiúsculas para que se diferencie os comandos
 
 

@@ -1,6 +1,6 @@
 COUNT
 
-Retorna o número de linhas que foi solicitada na condição.
+--Retorna o número de linhas que foi solicitada na condição.
 
 sintaxe:
 
