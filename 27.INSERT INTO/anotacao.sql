@@ -31,9 +31,12 @@ SELECT * INTO TabelaNova FROM aula
 
 CREATE TABLE Endereco (
 	AdressId INT PRIMARY KEY,
+	ClienteId INT ,
 	Endereco VARCHAR(200) NOT NULL,
 	CEP VARCHAR(15) NOT NULL,
 	Cidade VARCHAR(100) NOT NULL
+
+
 );
 
 CREATE TABLE Clientes (
@@ -41,7 +44,9 @@ CREATE TABLE Clientes (
 	Name VARCHAR(50) NOT NULL,
 	LastName VARCHAR(50) NOT NULL,
 	Phone VARCHAR(11) NOT NULL,
-	AdressId INT NOT NULL FOREIGN KEY REFERENCES Endereco(AdressId)
+	AdressId INT FOREIGN KEY REFERENCES Endereco(AdressId)
+	ON DELETE CASCADE
+        ON UPDATE CASCADE
 );
 
 INSERT INTO clientes(ClienteId,Name,LastName,phone)
